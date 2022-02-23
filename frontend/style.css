@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    box-sizing: border-box;
+    background: transparent;
+    font-family: inherit;
+}
+
+a{
+text-decoration: none;
+}
+a img {
+border: none;
+}
+
+button,
+a {
+cursor: pointer;
+color: inherit;
+}
+
+textarea {
+resize: none;
+}
+
+button,
+textarea,
+select {
+appearance: none !important;
+border-radius: 0;
+}
+
+
+/* END OF CSS RESET */
+
+/* LOADER CSS PROPERTIES */
+
+#loader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.disappear{
+    animation: vanish 5s forwards;
+}
+
+@keyframes vanish {
+    100%{
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+
+
+
+.animSection {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 250ms;
+    background-color: #000;
+    color: white;
+}
+
+
+
+.revolver {
+    position: absolute;
+    text-transform: uppercase;
+    font-family: 'Archivo', sans-serif;
+    transform: scale(1, 0.6);
+    font-size: 50px; 
+    
+}
+
+.words {
+    position: absolute;
+    bottom: 0px;
+    transform: translateY(-25%);
+    width: max-content;
+    padding-left: 20px;
+    text-transform: none;
+    font-family: 'Archivo', sans-serif;
+    font-size: 25px;
+    /* transform: scaleY(0.9); */
+    font-weight: 300;
+    vertical-align: baseline;
+    
+}
+
+
+
+.words::before {
+    content: "Creativity";
+    animation: animate  1.5s;
+    animation-iteration-count: 3;
+    
+}
+
+
+@keyframes animate {
+    0% {
+        content: "Creativity";
+            
+    }
+    
+    20% {
+        content: "Design";
+    }
+    
+    40% {
+        content: "Art direction";
+
+    }
+    
+    60% {
+        content: "Digital";
+        
+    }
+    
+    80% {
+        content: "Photography";
+    }
+    
+};
+
+@keyframes fadein {
+    0% {
+        opacity: 0.5;
+    }
+    
+    50% {
+        opacity: 1;
+    }
+    
+    100% {
+        opacity: 0.5;
+    }
+}
+
+/*--------------------MAIN PAGE-------------------*/
+
+.main-page {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-color: #fff; 
+    color: black;
+    font-family: 'Archivo', sans-serif;
+
+
+}
+
+.main-page .img {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: contain;
+    cursor: url("circle3.png"), auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    font-family: 'Archivo', sans-serif;
+    font-weight: 700;
+    transform: scale(1, 0.6);
+    font-size: 35px;
+    margin: 50px;
+    padding: 20px;
+
+}
+
+
+.main-page li {
+    display: inline
+}
+
+.main-page ul {
+    display: flex;
+    gap: 90px;
+}
+
+
+
+.nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    position: absolute;
+    bottom: 25px;
+    
+    /* text-transform: uppercase; */
+    font-family: 'Archivo', sans-serif;
+    /* font-weight: 700; */
+    transform: scale(1, 0.6);
+    font-size: 30px;
+    padding: 0 70px;
+    font-weight: 100;
+   
+}
+
+.work {
+    margin-left: 200px;
+    margin-right: 200px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+html {
+    cursor: url("circle3.png"), auto;
+}
+
+.main-page {
+    cursor: url("circle2.png"), auto;
+}
+
+
+
+
+
+
+
+
+
+
+
